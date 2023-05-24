@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #E3F2FD;
+}
+.popup{
+    position: absolute;
+    left: 50%;
+    top: -25%;
+    visibility: hidden;
+    transform: translateX(-50%);
+    width: 400px;
+    border-radius: 5px;
+    padding: 13px 17px 20px;
+    background: #fff;
+    display: flex;
+    border-top: 3px solid #EA3D67;
+    box-shadow: 0 10 25px rgba(52, 87, 220, 0.5);
+    transition: all 0.28s ease;
+}
+.popup.show{
+    top: 0;
+    visibility: visible;
+}
+.popup .icon i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #EA3D67;
+}
+.popup .title{
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.popup .des{
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+    color: #474747;
+}
+.popup .reconnect{
+    padding: 7px 15px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #4c5dee;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    
+}
